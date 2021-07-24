@@ -2,81 +2,87 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     background: white;
     justify-content: space-around;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }
-.navbar__brand{
+
+.navbar__brand {
     width: 100px;
 }
-.navbar__logo{
+
+.navbar__logo {
     width: 100%;
 }
-.button__primary{
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
+
+.button__primary {
+    background-image: linear-gradient( to left, #dd2476 30%, #ff512f 100%);
     color: #fff;
     border: none;
     padding: 10px;
     border-radius: 6px;
     font-weight: 600;
 }
-.button__primary:hover{
-    border: 2px solid #ff6767;
+
+.button__primary:hover {
     cursor: pointer;
-    background-image: linear-gradient(
-        to left,
-        #ff512f 100%,
-        #dd2476 51%
-    );
+    background-image: linear-gradient( to right, #dd2476 30%, #ff512f 100%);
 }
-.container{
+
+.container {
     max-width: 100%;
     padding: 20px;
     margin: 0 auto;
 }
-.first__section__image__container{
+
+.first__section__image__container {
     width: 100%;
 }
-.first__section__image{
+
+.first__section__image {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    margin: auto;
 }
-.first__section__text{
+
+.first__section__text {
     font-weight: 800;
     font-size: 30px;
-    margin: 20px 0;    
+    margin: 20px auto;
     color: #1d3557;
 }
-.food__card__discription{
+
+.food__card__discription {
     padding: 15px;
 }
-.food__card{
+
+.food__card {
     background-color: #f9f9f9;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 35%);
     border-radius: 8px 8px 0px 0px;
     padding-bottom: -20px;
 }
-.food__card__image__container{
+
+.food__card__image__container {
     width: 100%;
 }
-.food__image{
+
+.food__image {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
-.explore__menu__text{
+
+.explore__menu__text {
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
@@ -84,13 +90,9 @@ body{
     font-weight: 800;
     color: #1d3557;
 }
-.gradiant__button{
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
+
+.gradiant__button {
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
     color: #fff;
     font-size: 15px;
     border: none;
@@ -99,79 +101,142 @@ body{
     font-weight: 600;
     width: 100%;
 }
+
+.get__updates__container {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+}
+
+.Updates__text {
+    color: #1d3557;
+    padding-bottom: 20px;
+}
+
+.email__input {
+    padding: 10px 15px;
+    background-color: #FDF6F0;
+    border: 1px solid #E93B81;
+    color: #D1D9D9;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.get__updates {
+    padding: 42px 0px;
+    margin-left: 10px;
+}
+
+.get__updates__button {
+    padding: 10px 25px;
+    background-image: linear-gradient( to left, #dd2476 20%, #ff512f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
 @media (min-width: 768px) {
-    .explore__menu__list{
+    .explore__menu__list {
         display: flex;
         gap: 10px;
         margin-top: 40px;
         padding: 0px 30px;
     }
-    .first__section__container{
-        padding-bottom: 60px;
-    }
-    .explore__menu__container{
+    .explore__menu__container {
         position: relative;
     }
-    .explore__menu__gradiant__bg{
+    .explore__menu__gradiant__bg {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(
-            to right,
-            #ff512f 0%,
-            #dd2476 51%,
-            #ff512f 100%
-        );
+        background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
         z-index: -3;
         transform: skewY(-5deg);
     }
-    .gradiant__button__container{
+    .gradiant__button__container {
         border: none;
     }
-    .gradiant__button{
+    .gradiant__button {
         margin-top: 25px;
         background: none;
     }
-    #pizza__card{
+    #pizza__card {
         margin-top: -20px;
         margin-bottom: 30px;
     }
-    .navbar{
+    .navbar {
         justify-content: space-between;
         padding: 10px 30px;
     }
-    .first__section__container{
+    .first__section__container {
         margin-top: 20px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        padding-bottom: 50px;
+    }
+    .get__updates__container {
+        justify-content: center;
+    }
+    .get__updates__button {
+        margin-top: 8.5px;
+        border-radius: 4px;
     }
 }
-@media (min-width: 1024px){
-    .container{
+
+@media (min-width: 1200px) {
+    .container {
         max-width: 70%;
     }
-    .navbar__brand{
+    .navbar__brand {
         width: 100px;
     }
-    .button__primary{
+    .button__primary {
         padding: 20px;
         font-size: 20px;
     }
-    .first__section__discription{
+    .first__section__discription {
         width: 100%;
     }
-    .first__section__text{
+    .first__section__text {
         font-size: 48px;
     }
-    .explore__menu__gradiant__bg{
+    .explore__menu__gradiant__bg {
         padding-bottom: 70px;
     }
-    .explore__menu__list{
+    .explore__menu__list {
         padding: 0px 0px 0px 30px;
-        gap: 10px; 
-        padding: 0px 30px;      
+        gap: 10px;
+        padding: 0px 30px;
+    }
+    .first__section__text {
+        font-size: 45px;
+        font-weight: 800;
+    }
+    .Updates__text {
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .email__input {
+        width: 235px;
+    }
+    .get__updates__container {
+        padding-top: 150px;
+    }
+    .get__updates {
+        margin-top: -5px;
+    }
+    .get__updates__button {
+        padding: 15px 30px;
+        margin-top: 27px;
+        font-size: medium;
+    }
+    .get__updates__button:hover {
+        cursor: pointer;
+        background-image: linear-gradient( to right, #dd2476 20%, #ff512f 100%);
+        animation-delay: 0.5s;
     }
 }
